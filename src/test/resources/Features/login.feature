@@ -1,6 +1,7 @@
 @SmokeScenario
 Feature: User login
 
+  @Smoke @Login
   Scenario: User can log in to web page
     Given User connect to the base url
     When User click the login header menu
@@ -11,6 +12,7 @@ Feature: User login
 
 
   # Negative: 비밀번호 없이 아이디만 입력하고 로그인 시도
+  @Smoke @Login @Negative
   Scenario: User cannot log in with missing password
     Given User connect to the base url
     When User click the login header menu
@@ -20,6 +22,7 @@ Feature: User login
 
 
   # Edge: 아이디와 비밀번호 필드에 공백 문자만 입력하고 로그인 시도
+  @Login @Edge
   Scenario: User cannot log in with whitespace-only credentials
     Given User connect to the base url
     When User click the login header menu

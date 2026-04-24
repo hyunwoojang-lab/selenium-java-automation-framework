@@ -1,6 +1,19 @@
-2026-04-24 23:58:30.931 [INFO ] ConfigFileReader - Configuration.properties 로드 완료
-2026-04-24 23:58:30.934 [INFO ] WebDriverManager - 브라우저 생성: CHROME
-2026-04-24 23:58:32.522 [INFO ] CdpNetworkInterceptor - CDP DevTools 세션 생성 완료
-2026-04-24 23:58:32.522 [INFO ] Hooks - === 테스트 시작 ===
-2026-04-24 23:58:37.220 [INFO ] LoginSteps - 헤더 메뉴의 로그인 버튼 클릭
-2026-04-24 23:58:38.141 [INFO ] Hooks - === 테스트 종료 ===
+2026-04-25 01:38:29.649 [INFO ] ConfigFileReader - Configuration.properties 로드 완료
+2026-04-25 01:38:29.652 [INFO ] WebDriverManager - 브라우저 생성: CHROME
+2026-04-25 01:38:31.769 [INFO ] CdpNetworkInterceptor - CDP DevTools 세션 생성 완료
+2026-04-25 01:38:31.769 [INFO ] Hooks - === 테스트 시작 ===
+2026-04-25 01:38:36.426 [INFO ] LoginSteps - 헤더 메뉴의 로그인 버튼 클릭
+2026-04-25 01:38:36.930 [INFO ] Hooks - === 테스트 종료 ===
+2026-04-25 01:38:37.179 [INFO ] WebDriverManager - 브라우저 생성: CHROME
+2026-04-25 01:38:38.110 [INFO ] CdpNetworkInterceptor - CDP DevTools 세션 생성 완료
+2026-04-25 01:38:38.111 [INFO ] Hooks - === 테스트 시작 ===
+2026-04-25 01:38:42.094 [INFO ] LoginSteps - 헤더 메뉴의 로그인 버튼 클릭
+2026-04-25 01:38:42.405 [INFO ] LoginPage - Alart Message Count : 1
+2026-04-25 01:38:42.416 [INFO ] Hooks - === 테스트 종료 ===
+2026-04-25 01:38:42.630 [INFO ] WebDriverManager - 브라우저 생성: CHROME
+2026-04-25 01:38:43.454 [INFO ] CdpNetworkInterceptor - CDP DevTools 세션 생성 완료
+2026-04-25 01:38:43.454 [INFO ] Hooks - === 테스트 시작 ===
+2026-04-25 01:38:47.594 [INFO ] LoginSteps - 헤더 메뉴의 로그인 버튼 클릭
+2026-04-25 01:38:47.925 [INFO ] LoginPage - Alart Message Count : 2
+2026-04-25 01:38:48.063 [INFO ] LoginPage - Alart Message Count : 2
+2026-04-25 01:38:48.081 [INFO ] Hooks - === 테스트 종료 ===
