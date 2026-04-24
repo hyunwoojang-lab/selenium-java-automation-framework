@@ -1,0 +1,6 @@
+2026-04-24 23:58:30.931 [INFO ] ConfigFileReader - Configuration.properties 로드 완료
+2026-04-24 23:58:30.934 [INFO ] WebDriverManager - 브라우저 생성: CHROME
+2026-04-24 23:58:32.522 [INFO ] CdpNetworkInterceptor - CDP DevTools 세션 생성 완료
+2026-04-24 23:58:32.522 [INFO ] Hooks - === 테스트 시작 ===
+2026-04-24 23:58:37.220 [INFO ] LoginSteps - 헤더 메뉴의 로그인 버튼 클릭
+2026-04-24 23:58:38.141 [INFO ] Hooks - === 테스트 종료 ===
