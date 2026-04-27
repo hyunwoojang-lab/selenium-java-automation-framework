@@ -2,13 +2,14 @@ package managers;
 
 import org.openqa.selenium.WebDriver;
 import pageObjects.LoginPage;
+import pageObjects.SearchPage;
 
 public class PageObjectManager {
-    private WebDriver driver;
+    private final WebDriver driver;
 
     private LoginPage loginPage;
+    private SearchPage searchPage;
 //    private HomePage homePage;
-//    private SearchPage searchPage;
 //    private ProductDetailPage productDetailPage;
 //    private CartPage cartPage;
 
@@ -20,12 +21,12 @@ public class PageObjectManager {
         return (loginPage == null) ? loginPage = new LoginPage(driver) : loginPage;
     }
 
+    public SearchPage getSearchPage() {
+        return (searchPage == null) ? searchPage = new SearchPage(driver) : searchPage;
+    }
+
 //    public HomePage getHomePage() {
 //        return (homePage == null) ? homePage = new HomePage(driver) : homePage;
-//    }
-//
-//    public SearchPage getSearchPage() {
-//        return (searchPage == null) ? searchPage = new SearchPage(driver) : searchPage;
 //    }
 //
 //    public ProductDetailPage getProductDetailPage() {
