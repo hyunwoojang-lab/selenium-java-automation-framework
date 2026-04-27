@@ -31,10 +31,11 @@ selenium-cucumber-java-framework/
 │   │   │   ├── managers/
 │   │   │   │   ├── CdpNetworkInterceptor.java    # CDP 기반 API Mock 처리
 │   │   │   │   ├── FileReaderManager.java        # ConfigFileReader 싱글톤 관리
-│   │   │   │   ├── PageObjectManager.java        # Page 객체 Lazy 초기화
+│   │   │   │   ├── PageObjectManager.java        # Page 객체 Lazy 초기화 (LoginPage · SearchPage)
 │   │   │   │   └── WebDriverManager.java         # WebDriver 생성 · 종료
 │   │   │   └── pageObjects/
-│   │   │       └── LoginPage.java                # 로그인 페이지 POM
+│   │   │       ├── LoginPage.java                # 로그인 페이지 POM
+│   │   │       └── SearchPage.java               # 검색 페이지 POM
 │   │   └── resources/
 │   │       └── log4j2.xml                        # 로그 설정
 │   └── test/
@@ -42,12 +43,14 @@ selenium-cucumber-java-framework/
 │       │   ├── stepDefinitions/
 │       │   │   ├── Hooks.java                    # Before / After (브라우저 생명주기)
 │       │   │   ├── LoginSteps.java               # 로그인 시나리오 Step 구현
+│       │   │   ├── SearchSteps.java              # 검색 시나리오 Step 구현
 │       │   │   └── NetworkInterceptSteps.java    # CDP 인터셉트 Step 구현
 │       │   └── testRunner/
 │       │       └── testRunner.java               # Cucumber 실행 설정
 │       └── resources/
 │           └── Features/
 │               ├── login.feature                 # 로그인 시나리오
+│               ├── search.feature                # 검색 시나리오
 │               └── networkIntercept.feature      # CDP 인터셉트 시나리오
 ├── configs/
 │   └── Configuration.properties                  # 실행 환경 설정
