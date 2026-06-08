@@ -11,7 +11,7 @@ Feature: User login
 #    Then User can see that the login was successful
 
 
-  # Negative: 비밀번호 없이 아이디만 입력하고 로그인 시도
+  # Negative: 비밀번호 없이 아이디만 입력하고 로그인 시도 테스트
   @Smoke @Login @Negative
   Scenario: User cannot log in with missing password
     Given User connect to the base url
