@@ -5,9 +5,9 @@ Feature: User search
   Scenario: User can see product cards after searching for a keyword
     Given User connect to the base url
     When User click the search box
-    And User enter search keyword "무신사 스탠다드" and press enter
+    And User enter search keyword "스탠다드" and press enter
     Then User can see product cards displayed in search results
-    And User can see "무신사 스탠다드" in the first product card title
+    And User can see "스탠다드" in the first product card title
 
   # Negative: 존재하지 않는 키워드로 검색 시 상품 카드가 표시되지 않아야 함
   @Search @Negative
