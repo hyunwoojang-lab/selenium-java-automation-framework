@@ -1,5 +1,13 @@
-2026-05-30 17:27:26.680 [INFO ] ConfigFileReader - Configuration.properties 로드 완료
-2026-05-30 17:27:26.684 [INFO ] WebDriverManager - 브라우저 생성: CHROME
-2026-05-30 17:27:30.431 [INFO ] CdpNetworkInterceptor - CDP DevTools 세션 생성 완료
-2026-05-30 17:27:30.431 [INFO ] Hooks - === 테스트 시작 ===
-2026-05-30 17:27:45.788 [INFO ] Hooks - === 테스트 종료 ===
+2026-06-26 20:13:11.068 [INFO ] ConfigFileReader - Configuration.properties 로드 완료
+2026-06-26 20:13:11.071 [INFO ] WebDriverManager - 브라우저 생성: CHROME
+2026-06-26 20:13:12.488 [INFO ] CdpNetworkInterceptor - CDP DevTools 세션 생성 완료
+2026-06-26 20:13:12.488 [INFO ] Hooks - === 테스트 시작 ===
+2026-06-26 20:13:36.699 [INFO ] Hooks - === 테스트 종료 ===
+2026-06-26 20:13:47.295 [INFO ] WebDriverManager - 브라우저 생성: CHROME
+2026-06-26 20:13:48.234 [INFO ] CdpNetworkInterceptor - CDP DevTools 세션 생성 완료
+2026-06-26 20:13:48.234 [INFO ] Hooks - === 테스트 시작 ===
+2026-06-26 20:13:54.984 [INFO ] Hooks - === 테스트 종료 ===
+2026-06-26 20:13:55.083 [INFO ] WebDriverManager - 브라우저 생성: CHROME
+2026-06-26 20:13:56.039 [INFO ] CdpNetworkInterceptor - CDP DevTools 세션 생성 완료
+2026-06-26 20:13:56.040 [INFO ] Hooks - === 테스트 시작 ===
+2026-06-26 20:14:10.736 [INFO ] Hooks - === 테스트 종료 ===

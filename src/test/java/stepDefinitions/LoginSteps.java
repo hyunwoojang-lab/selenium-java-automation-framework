@@ -73,7 +73,7 @@ public class LoginSteps {
     }
 
     @When("User enter {string} and {string}")
-    public void user_enter_userid_and_pw(String id, String pw) {
+    public void user_enter_email_and_pw(String id, String pw) {
         loginPage.enterEmail(id);
         loginPage.enterPassword(pw);
     }
@@ -114,6 +114,29 @@ public class LoginSteps {
         } else {
             assertEquals(message, actualMessage);
         }
+    }
+
+
+    // ERP
+    @When("User enter {string} and {string} in the ERP")
+    public void user_enter_userid_and_pw(String id, String pw) {
+        loginPage.enterUsername(id);
+        loginPage.enterPassword(pw);
+    }
+
+    @When("User click the login button in the ERP")
+    public void user_click_the_login_button_in_the_ERP() {
+        loginPage.submitLogin();
+    }
+
+
+    @Then("User can see the username and dashboard page")
+    public void user_can_see_the_username_and_dashboard_page() throws InterruptedException {
+        String loginSuccessText = loginPage.getUsernameResultText();
+        String pageTitle = loginPage.getDashboardText();
+        assertEquals("user135", loginSuccessText);
+        assertEquals("Dashboard", pageTitle);
+        Thread.sleep(4000);
     }
 
 

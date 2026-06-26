@@ -2,13 +2,17 @@ package managers;
 
 import org.openqa.selenium.WebDriver;
 import pageObjects.LoginPage;
+import pageObjects.PimPage;
 import pageObjects.SearchPage;
+import pageObjects.SideMenuPage;
 
 public class PageObjectManager {
     private final WebDriver driver;
 
     private LoginPage loginPage;
     private SearchPage searchPage;
+    private PimPage pimPage;
+    private SideMenuPage sideMenuPage;
 //    private HomePage homePage;
 //    private ProductDetailPage productDetailPage;
 //    private CartPage cartPage;
@@ -23,6 +27,14 @@ public class PageObjectManager {
 
     public SearchPage getSearchPage() {
         return (searchPage == null) ? searchPage = new SearchPage(driver) : searchPage;
+    }
+
+    public PimPage getPimPage() {
+        return (pimPage == null) ? pimPage = new PimPage(driver) : pimPage;
+    }
+
+    public SideMenuPage getSideMenuPage() {
+        return (sideMenuPage == null) ? sideMenuPage = new SideMenuPage(driver) : sideMenuPage;
     }
 
 //    public HomePage getHomePage() {
