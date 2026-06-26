@@ -25,6 +25,13 @@ public class LoginPage {
     private By errorMessage = By.className("error-msg");
     private By wrongPasswordAlertText = By.className("login-v2-input__validation");
 
+    // ERP
+    private By usernameField = By.cssSelector("input[name='username']");
+    private By getUsernameField = By.className("oxd-userdropdown-name");
+    private By loginSubmit = By.cssSelector("button[type='submit']");
+    private By dashboardTitle = By.cssSelector("h6.oxd-topbar-header-breadcrumb-module");
+
+
     public LoginPage(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -52,7 +59,8 @@ public class LoginPage {
     }
 
     public void clickLogin() {
-        driver.findElement(loginButton).click();
+//        driver.findElement(loginButton).click();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(loginButton)).click();
     }
 
     public String getLoginResultText() {
@@ -94,5 +102,24 @@ public class LoginPage {
             return result.toString();
         }
         return "";
+    }
+
+    // ERP
+    public void enterUsername(String user) {
+        WebElement field = wait.until(ExpectedConditions.visibilityOfElementLocated(usernameField));
+        field.clear();
+        field.sendKeys(user);
+    }
+
+    public void submitLogin() {
+        driver.findElement(loginSubmit).click();
+    }
+
+    public String getUsernameResultText() {
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(getUsernameField)).getText();
+    }
+
+    public String getDashboardText() {
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(dashboardTitle)).getText();
     }
 }
